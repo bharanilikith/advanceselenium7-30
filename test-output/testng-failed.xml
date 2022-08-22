@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.EducationalDomain.Scripts.Testcase2">
+        <methods>
+          <include name="openApp"/>
+          <include name="tc2" invocation-numbers="0 1 2 3"/>
+          <include name="closeApp"/>
+          <include name="configBS"/>
+          <include name="configAS"/>
+        </methods>
+      </class> <!-- com.EducationalDomain.Scripts.Testcase2 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
