@@ -1,239 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="6" total="13" passed="5" failed="2" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Data found]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-08-22T09:38:51 IST" name="Default suite" finished-at="2022-08-22T09:39:59 IST" duration-ms="68028">
+  <suite started-at="2022-08-24T08:50:04 IST" name="Suite" finished-at="2022-08-24T08:51:44 IST" duration-ms="100351">
     <groups>
     </groups>
-    <test started-at="2022-08-22T09:38:51 IST" name="Default test" finished-at="2022-08-22T09:39:59 IST" duration-ms="68028">
+    <test started-at="2022-08-24T08:50:04 IST" name="Test" finished-at="2022-08-24T08:51:44 IST" duration-ms="100351">
+      <class name="com.EducationalDomain.Scripts.Testcase1">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase1@2f8dad04]" started-at="2022-08-24T08:51:35 IST" name="openApp" finished-at="2022-08-24T08:51:39 IST" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testcase1()[pri:0, instance:com.EducationalDomain.Scripts.Testcase1@2f8dad04]" started-at="2022-08-24T08:51:39 IST" name="testcase1" finished-at="2022-08-24T08:51:43 IST" duration-ms="3991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase1@2f8dad04]" started-at="2022-08-24T08:51:43 IST" name="closeApp" finished-at="2022-08-24T08:51:44 IST" duration-ms="907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testcase1 status=SUCCESS method=Testcase1.testcase1()[pri:0, instance:com.EducationalDomain.Scripts.Testcase1@2f8dad04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.EducationalDomain.Scripts.Testcase1 -->
+      <class name="com.EducationalDomain.Scripts.Testcase3">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase3@53976f5c]" started-at="2022-08-24T08:50:16 IST" name="openApp" finished-at="2022-08-24T08:50:21 IST" duration-ms="5252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc3()[pri:0, instance:com.EducationalDomain.Scripts.Testcase3@53976f5c]" started-at="2022-08-24T08:50:21 IST" name="tc3" finished-at="2022-08-24T08:50:31 IST" duration-ms="9989" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Learn Core Java for Selenium|Core Java Certification|SkillRary ] but found [Learn Core Java for Selenium|Core Java Certification|SkillRary]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Learn Core Java for Selenium|Core Java Certification|SkillRary ] but found [Learn Core Java for Selenium|Core Java Certification|SkillRary]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.EducationalDomain.Scripts.Testcase3.tc3(Testcase3.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase3@53976f5c]" started-at="2022-08-24T08:50:31 IST" name="closeApp" finished-at="2022-08-24T08:50:33 IST" duration-ms="1654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc3 status=FAILURE method=Testcase3.tc3()[pri:0, instance:com.EducationalDomain.Scripts.Testcase3@53976f5c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.EducationalDomain.Scripts.Testcase3 -->
       <class name="com.EducationalDomain.Scripts.Testcase2">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:38:50 IST" name="configBS" finished-at="2022-08-22T09:38:51 IST" duration-ms="486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:38:53 IST" name="openApp" finished-at="2022-08-22T09:38:59 IST" duration-ms="6085" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:50:34 IST" name="openApp" finished-at="2022-08-24T08:50:38 IST" duration-ms="4259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:38:59 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-22T09:39:10 IST" duration-ms="10890" status="FAIL">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
-at com.EducationalDomain.Wipro.PomPages.ContactUspage.sendDetails(ContactUspage.java:29)
-at com.EducationalDomain.Scripts.Testcase2.tc2(Testcase2.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:10 IST" name="closeApp" finished-at="2022-08-22T09:39:11 IST" duration-ms="1093" status="PASS">
+        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:50:38 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-24T08:50:47 IST" duration-ms="8618" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=FAILURE method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b] output={null}]]]>
+                <![CDATA[Ramesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ramesh@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tset request plz dnt consider]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:50:47 IST" name="closeApp" finished-at="2022-08-24T08:50:48 IST" duration-ms="946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:11 IST" name="openApp" finished-at="2022-08-22T09:39:14 IST" duration-ms="3589" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:50:48 IST" name="openApp" finished-at="2022-08-24T08:50:52 IST" duration-ms="4102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:14 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-22T09:39:19 IST" duration-ms="5046" status="FAIL">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QSP', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 857501ba5136a291fec58a0e43a7985c
-*** Element info: {Using=xpath, value=//a[text()=' Contact Us ']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QSP', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 857501ba5136a291fec58a0e43a7985c
-*** Element info: {Using=xpath, value=//a[text()=' Contact Us ']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.click(Unknown Source)
-at com.EducationalDomain.Wipro.PomPages.LoginPage.contact(LoginPage.java:37)
-at com.EducationalDomain.Scripts.Testcase2.tc2(Testcase2.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:19 IST" name="closeApp" finished-at="2022-08-22T09:39:20 IST" duration-ms="613" status="PASS">
+        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:50:52 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-24T08:51:06 IST" duration-ms="14298" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=FAILURE method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b] output={null}]]]>
+                <![CDATA[Likith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[likith@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tset request plz dnt consider]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:20 IST" name="openApp" finished-at="2022-08-22T09:39:25 IST" duration-ms="5330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:25 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-22T09:39:48 IST" duration-ms="22676" status="FAIL">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=104.0.5112.101)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QSP', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+System info: host: 'QSP', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: adcfce3195263e4da11593bd349ccfdf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c86b841b3fc10822849bdf12ee03ec6
 *** Element info: {Using=name, value=name}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=104.0.5112.101)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name']"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QSP', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+System info: host: 'QSP', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: adcfce3195263e4da11593bd349ccfdf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:59152}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c86b841b3fc10822849bdf12ee03ec6
 *** Element info: {Using=name, value=name}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -285,132 +235,136 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:48 IST" name="closeApp" finished-at="2022-08-22T09:39:49 IST" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:06 IST" name="closeApp" finished-at="2022-08-24T08:51:08 IST" duration-ms="1540" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=FAILURE method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b] output={null}]]]>
+                <![CDATA[[TestResult name=tc2 status=FAILURE method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:49 IST" name="openApp" finished-at="2022-08-22T09:39:53 IST" duration-ms="4611" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:08 IST" name="openApp" finished-at="2022-08-24T08:51:12 IST" duration-ms="4387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:53 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-22T09:39:58 IST" duration-ms="5012" status="FAIL">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-            <param index="3">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QSP', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ca9b9f848ebac49e38ac0ba03d9d2b9b
-*** Element info: {Using=xpath, value=//a[text()=' Contact Us ']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=104.0.5112.101)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QSP', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\QSP\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:64520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ca9b9f848ebac49e38ac0ba03d9d2b9b
-*** Element info: {Using=xpath, value=//a[text()=' Contact Us ']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.click(Unknown Source)
-at com.EducationalDomain.Wipro.PomPages.LoginPage.contact(LoginPage.java:37)
-at com.EducationalDomain.Scripts.Testcase2.tc2(Testcase2.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:58 IST" name="closeApp" finished-at="2022-08-22T09:39:59 IST" duration-ms="596" status="PASS">
+        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:12 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-24T08:51:20 IST" duration-ms="8074" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tc2 status=FAILURE method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b] output={null}]]]>
+                <![CDATA[Suresh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suri@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[python]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tset request plz dnt consider]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:20 IST" name="closeApp" finished-at="2022-08-24T08:51:21 IST" duration-ms="1031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@1eb5174b]" started-at="2022-08-22T09:39:59 IST" name="configAS" finished-at="2022-08-22T09:40:00 IST" duration-ms="856" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:21 IST" name="openApp" finished-at="2022-08-24T08:51:26 IST" duration-ms="4934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:26 IST" name="tc2" data-provider="readExceldata" finished-at="2022-08-24T08:51:34 IST" duration-ms="7891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mahesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mahi@gmail.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Appium]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tset request plz dnt consider]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b]" started-at="2022-08-24T08:51:34 IST" name="closeApp" finished-at="2022-08-24T08:51:35 IST" duration-ms="944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc2 status=SUCCESS method=Testcase2.tc2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.EducationalDomain.Scripts.Testcase2@2bfc268b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.EducationalDomain.Scripts.Testcase2 -->
+      <class name="com.EducationalDomain.Scripts.Testcase4">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.EducationalDomain.Scripts.Testcase4@4e7912d8]" started-at="2022-08-24T08:50:02 IST" name="configBS" finished-at="2022-08-24T08:50:04 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.EducationalDomain.Scripts.Testcase4@4e7912d8]" started-at="2022-08-24T08:50:04 IST" name="openApp" finished-at="2022-08-24T08:50:10 IST" duration-ms="6383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="tc4()[pri:0, instance:com.EducationalDomain.Scripts.Testcase4@4e7912d8]" started-at="2022-08-24T08:50:10 IST" name="tc4" finished-at="2022-08-24T08:50:15 IST" duration-ms="4268" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Data found]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc4 -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:com.EducationalDomain.Scripts.Testcase4@4e7912d8]" started-at="2022-08-24T08:50:15 IST" name="closeApp" finished-at="2022-08-24T08:50:16 IST" duration-ms="912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc4 status=SUCCESS method=Testcase4.tc4()[pri:0, instance:com.EducationalDomain.Scripts.Testcase4@4e7912d8] output=Data found]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.EducationalDomain.Scripts.Testcase4@4e7912d8]" started-at="2022-08-24T08:51:44 IST" name="configAS" finished-at="2022-08-24T08:51:45 IST" duration-ms="709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.EducationalDomain.Scripts.Testcase2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.EducationalDomain.Scripts.Testcase4 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

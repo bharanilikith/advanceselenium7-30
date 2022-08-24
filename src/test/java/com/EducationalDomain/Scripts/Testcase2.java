@@ -15,7 +15,7 @@ public class Testcase2 extends Demo{
 	public void tc2(String name,String mail,String sub,String msg) throws InterruptedException {
 		test=reports.createTest("tc2");
 		LoginPage lp=new LoginPage(driver);
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 //		Point loc = lp.getContactus().getLocation();
 //		int x = loc.getX();
 //		int y=loc.getY();

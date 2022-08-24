@@ -81,25 +81,40 @@ public class FileUtilies  {
 	 * @throws SQLException
 	 */
 	
-	public static Connection  getDataDb() throws SQLException {
-	Driver driverref=new Driver();
-	DriverManager.registerDriver(driverref);
-	 return con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sonoo","root","root");
+	public static Connection getDataDb() throws SQLException {
+		Driver driver=new Driver();
+		DriverManager.registerDriver(driver);
+		return con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testing","root",
+				"root");
 	}
-	
-	public static String queryExecution(String query,int column,String expdata) throws SQLException {
+	/**
+	 * To execute the query
+	 * @param query
+	 * @param column
+	 * @param Expecteddata
+	 * @return
+	 * @throws SQLException
+	 */
+	public static String queryExecution(String query,int column,String Expecteddata) throws SQLException {
 		Statement statement = con.createStatement();
 		ResultSet result = statement.executeQuery(query);
 		while(result.next()) {
-			if(result.getString(column).equals(expdata)){
+			if(result.getString(column).equals(Expecteddata)) {
 				break;
 			}
-			else {
-				Reporter.log("data not matching");
+			else
+			{
+				Reporter.log("Data found",true);
 			}
 		}
-		return expdata;
-		
+		return Expecteddata;
+	
 	}
-
+	/**
+	 * Close the database connection
+	 * @throws SQLException
+	 */
+	public static void closedb() throws SQLException {
+		con.close();
+	}
 }
